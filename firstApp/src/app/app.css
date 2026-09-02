@@ -1,0 +1,36 @@
+
+.btn{
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    color: white;
+}
+
+.cr{
+    height: 100vh;
+    border: 1px solid red;
+}
+
+.btn:hover{
+    border: 1px solid aqua;
+}
+
+#in{
+    background-color: blueviolet;
+}
+
+#de{
+    background-color: red;
+}
+
+#re{
+    background-color: black;
+}
+
+.d{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
