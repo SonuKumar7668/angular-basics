@@ -1,0 +1,52 @@
+<div class="cr">
+    <h2>Get and Set Input field value</h2>
+    <p>Username is: {{name}}</p>
+    <h1>Name: {{displayName}}</h1>
+    <input type="text" value="{{name}}" (input)="getName($event)" placeholder="Enter your name">
+    <br>
+    <br>
+    <button (click)="showName($event)">Show name</button>
+    <button (click)="setName($event)">Set name</button>
+
+    <br>
+    <br>
+    <p>{{email}}</p>
+    <input type="email" placeholder="Enter email" #emailField>
+    <button (click)="showEmail(emailField.value)">show mail</button>
+</div>
+
+
+
+<!-- <h1>Hello sonu</h1>
+<h2>{{title()}}</h2>
+<p>{{name}}</p>
+<p>{{10+5}}</p>
+<p>{{isAdmin ? "Welcome Admin":"Welcome User"}}</p>
+<p>{{count}} {{price}} {{isLogin}}</p>
+<p>{{getUser()}}</p>
+<app-login></app-login>
+<app-signin></app-signin>
+
+<h1>Profile</h1>
+<app-profile></app-profile>
+<button (click)="handle_click()">Click me</button> -->
+
+<!-- <h1>Counter</h1>
+<div>
+
+    <p>{{count}}</p>
+    <div>
+
+        <button id="de" class="btn" (click)="handleCounter('minus')">Decrease</button>
+        <button id="re" class="btn" (click)="handleCounter('reset')">Reset</button>
+        <button id="in" class="btn" (click)="handleCounter('plus')" >increase</button>
+    </div>
+</div> -->
+
+<h1>Event </h1>
+<button class="bt" (mouseenter)="handleEvent($event)">Click</button>
+<div class="d" (mouseenter)="handleEvent($event)">
+
+</div>
+<label>name</label>
+<input title="name" (input)="handleEvent($event)" />

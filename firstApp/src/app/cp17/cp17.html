@@ -1,0 +1,17 @@
+<p>cp17 works!</p>
+<input type="text" placeholder="Enter color" #colorPicker>
+<button (click)="changeColor(colorPicker.value)">change color</button>
+@switch (color) {
+    @case ('red') {
+        <h1 style='background-color: {{color}};'>{{color}}</h1>
+    }
+    @case ('green') {
+        <h1 style='background-color: {{color}};'>{{color}}</h1>
+    }
+    @case ('blue') {
+        <h1 style='background-color: {{color}};'>{{color}}</h1>
+    }
+    @default {
+        <h1 style="background-color: black; color:white">black</h1>
+    }
+}

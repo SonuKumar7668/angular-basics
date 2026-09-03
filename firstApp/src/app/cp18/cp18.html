@@ -1,0 +1,12 @@
+<h1>Loop</h1>
+@for(user of users;track user){
+    <p>{{user}}</p>
+}
+<hr>
+@for(student of students; track student.email){
+    <div class="card">
+        <p>Name: {{student.name}}</p>
+        <p>Age: {{student.age}}</p>
+        <p>email: {{student.email}}</p>
+    </div>
+}
