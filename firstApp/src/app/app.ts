@@ -1,16 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Login } from './login/login';
-import { SigninComponent } from './signin/signin';
-import { Profile } from './profile/profile';
-import { Til15 } from './til15/til15';
-import { Cp16 } from './cp16/cp16';
-import { Cp15 } from './cp15/cp15';
-import { Cp17 } from './cp17/cp17';
-import { Cp18 } from './cp18/cp18';
+import { Cp20 } from './cp20/cp20';
+import { Cp21 } from './cp21/cp21';
 
 @Component({
-  imports: [Cp18],
+  imports: [Cp21],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

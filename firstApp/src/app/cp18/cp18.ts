@@ -12,6 +12,7 @@ export class Cp18 {
     {name:"sonu",age:22,email:"sonu@gmail.com"},
     {name:"tony",age:32,email:"tony@gmail.com"},
     {name:"bruce",age:41,email:"bruce@gmail.com"},
-    {name:"bruce",age:41,email:"bruce@gmail.com"},
+    {name:"jai",age:41,email:"jai@gmail.com"},
+    {name:"new",age:31,email:"new@gmail.com"},
   ]
 }
