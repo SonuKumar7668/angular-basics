@@ -1,0 +1,10 @@
+<h1>Effect</h1>
+<P>{{name()}}</P>
+<button (click)="updateUsername()">Update</button>
+<button (click)="this.name.set('singh')">update sam</button>
+<p>{{count}}</p>
+<button (click)="count=count+1">count</button>
+@if(headingDisplay && count==2){
+<h2 style="background-color: aqua;">Page Heading</h2>
+}
+<button (click)="toggleValue()">Show heading</button>

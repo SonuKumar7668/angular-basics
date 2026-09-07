@@ -1,0 +1,9 @@
+<h1>Contextual Variables</h1>
+
+@for(user of users; track user){
+    @if($first || $last){
+    <p style="background-color: aqua;">{{$index+1}}. {{user}}</p>
+    }@else{
+        <p>{{$index+1}}. {{user}}</p>
+    }
+}
