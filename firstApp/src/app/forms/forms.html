@@ -1,0 +1,18 @@
+<!-- <p>forms works!</p>
+    <input type="text" placeholder="name" [formControl]="name"> <br><br>
+    <input type="text" placeholder="password" [formControl]="passowrd"><br><br>
+    <button (click)="handleSubmit()">Login</button>
+    <button (click)="updateValue()">Update</button>
+{{name.value}} -->
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Enter name" formControlName="user" >
+    @if (user?.hasError('required')) {
+    <span > name is required</span>
+    }
+    <span style="background-color: red;" *ngIf="user?.invalid && user.dirty || user?.touched">name required</span>
+    <br><br> 
+    <input type="text" placeholder="passowrd" formControlName="password"> <br><br>
+    <input type="text" placeholder="email" formControlName="email"> <br><br>
+    <button>submit</button>
+</form>

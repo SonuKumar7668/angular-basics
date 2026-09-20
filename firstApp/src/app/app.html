@@ -1,8 +1,19 @@
 <h1>Home page</h1>
 <ul>
+    <li><a [routerLink]="['/profile',{name:'sonu'}]">Profile</a></li>
     <li><a routerLink="/login">Login</a></li>
-    <li><a routerLink="/profile">Profile</a></li>
     <li><a routerLink="/til15">til15</a></li>
+    <li><a routerLink="/forms">Forms</a></li>
+    <li><a routerLink="/rf">Template-forms</a></li>
 </ul>
+<button (click)="gotoProfile()">go to profile</button>
+
+<!-- user lists -->
+ <!-- <h2>user list</h2>
+ <ul>
+ @for(user of users; track user.id){
+    <li> <a routerLink="user/{{user.id}}/{{user.name}}"> {{user.name}}</a></li>
+ }
+ </ul> -->
 
 <router-outlet></router-outlet>

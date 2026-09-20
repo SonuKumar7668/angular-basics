@@ -1,0 +1,25 @@
+<p>Template-forms works!</p>
+<form action="" #userForm="ngForm" (ngSubmit)="addDetail(userForm.value)">
+  <input #name="ngModel" type="text" required name="name" placeholder="Enter your name" ngModel />
+  @if(name.invalid && name.touched) {
+      <span class="error">Name is required</span>
+  }  
+  <br /><br />
+  <input type="text" name="password" #password="ngModel" minlength="4" maxlength="15" placeholder="Enter your password" ngModel />
+    @if(password.invalid && password.touched) {
+      <span class="error">passowrd is required</span>
+  }  
+  <br /><br />
+  <select name="gender" ngModel>
+    <option value="">Select gender</option>
+    <option value="male">Male</option>
+    <option value="female">female</option>
+  </select>
+  <br /><br />
+  <input type="range" name="range" min="0" max="20" ngModel />
+  <button>Add user</button>
+</form>
+<h3>
+  {{ userDetail.name }} - {{ userDetail.password }} - {{ userDetail.gender }} -
+  {{ userDetail.range }}
+</h3>

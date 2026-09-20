@@ -1,1 +1,7 @@
 <h1>Profile page</h1>
+<h3>Name: {{userName}}</h3>
+
+<div>
+    <H1>Child component</H1>
+    <app-child [user]="users" (getUsers)="getUsers($event)" ></app-child>
+</div>
